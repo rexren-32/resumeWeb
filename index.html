@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张三 - 个人简历</title>
+  <meta name="description" content="张三的个人简历网站 - Java后端开发工程师">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== 导航栏（固定顶部） ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">张三<span>.dev</span></a>
+
+      <!-- 移动端汉堡按钮 -->
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系我</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== 首页 Hero ========== -->
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <!-- 头像占位：换成自己的照片可改为 <img src="avatar.jpg" alt="头像"> -->
+      <div class="avatar">张</div>
+      <h1>你好，我是 <span class="highlight">张三</span></h1>
+      <p class="subtitle">Java 后端开发工程师 · 2027 届应届毕业生</p>
+      <p class="slogan">热爱 coding，专注于用 Spring Boot 构建可靠的后端服务</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看我的项目</a>
+        <a href="#contact" class="btn btn-ghost">联系我</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== 关于我 ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">关于我</h2>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              我是某某大学计算机科学与技术专业的大三学生，对后端开发有浓厚兴趣。
+              熟悉 Java 基础与 Spring Boot 框架，了解 MySQL 数据库与 Web 开发基本流程，
+              正在通过课程项目和个人练习不断积累工程经验。
+            </p>
+            <p>
+              平时喜欢在 GitHub 上逛开源项目，遇到问题习惯先查官方文档。
+              希望能在实习中接触真实业务，写出能上线的代码。
+            </p>
+          </div>
+          <ul class="about-facts">
+            <li><strong>学校：</strong>某某大学</li>
+            <li><strong>专业：</strong>计算机科学与技术</li>
+            <li><strong>年级：</strong>大三 / 2027 届</li>
+            <li><strong>城市：</strong>北京</li>
+            <li><strong>求职方向：</strong>Java 后端开发实习</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 技能 ========== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">技能栈</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>编程语言</h3>
+            <ul class="tag-list">
+              <li>Java</li><li>SQL</li><li>JavaScript</li><li>HTML/CSS</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>框架</h3>
+            <ul class="tag-list">
+              <li>Spring Boot</li><li>MyBatis</li><li>Spring MVC</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>数据库 & 工具</h3>
+            <ul class="tag-list">
+              <li>MySQL</li><li>Maven</li><li>Git</li><li>Postman</li><li>Linux 基础</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 项目经历 ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">项目经历</h2>
+        <div class="project-grid">
+
+          <article class="project-card reveal">
+            <div class="project-cover cover-1">📚</div>
+            <div class="project-body">
+              <h3>图书管理系统</h3>
+              <p class="project-tech">Spring Boot · MyBatis · MySQL · Vue</p>
+              <p>课程项目，实现图书的增删改查、借阅归还与用户权限管理，
+                负责后端接口设计与数据库表结构设计。</p>
+              <div class="project-links">
+                <a href="#" class="link">GitHub →</a>
+                <a href="#" class="link">详情 →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-cover cover-2">🛒</div>
+            <div class="project-body">
+              <h3>简易商城后端</h3>
+              <p class="project-tech">Spring Boot · MySQL · Redis</p>
+              <p>个人练习项目，实现商品列表、购物车、下单流程，
+                使用 Redis 缓存热门商品，练习了 RESTful 接口设计。</p>
+              <div class="project-links">
+                <a href="#" class="link">GitHub →</a>
+                <a href="#" class="link">详情 →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-cover cover-3">🌐</div>
+            <div class="project-body">
+              <h3>个人简历网站</h3>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <p>就是你现在看到的这个网站！纯手写三件套，
+                包含响应式布局、深色模式与滚动动画，部署在 GitHub Pages。</p>
+              <div class="project-links">
+                <a href="#" class="link">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 教育 & 获奖 ========== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title reveal">教育经历 & 获奖</h2>
+        <ul class="timeline">
+          <li class="reveal">
+            <span class="timeline-date">2023.09 - 2027.06</span>
+            <div>
+              <h3>某某大学 · 计算机科学与技术（本科）</h3>
+              <p>主修课程：数据结构、操作系统、计算机网络、数据库原理、Java 程序设计</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="timeline-date">2025</span>
+            <div>
+              <h3>校级程序设计竞赛 · 二等奖</h3>
+              <p>三人组队，负责后端算法与数据处理部分</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 联系我 ========== -->
+    <section class="section" id="contact">
+      <div class="container contact-inner reveal">
+        <h2 class="section-title">联系我</h2>
+        <p>如果您对我感兴趣，欢迎通过以下方式联系我</p>
+        <div class="contact-links">
+          <a href="mailto:zhangsan@example.com" class="btn btn-primary">📧 zhangsan@example.com</a>
+          <a href="https://github.com/yourname" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+          <a href="resume.pdf" class="btn btn-ghost" download>下载简历 PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 张三 · 用 ❤️ 和 HTML/CSS/JS 手写</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
